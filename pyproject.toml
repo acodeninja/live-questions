@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "live-questions"
-version = "0.1.0"
+version = "0.1.1"
 description = "Throw up a QR code that links to presentation questions"
 authors = ["Lawrence <lawrence@acode.ninja>"]
 license = "MPL-2.0"
