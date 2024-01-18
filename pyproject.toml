@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "presentation-questions"
+version = "0.1.0"
+description = "Throw up a QR code that links to presentation questions"
+authors = ["Lawrence <lawrence@acode.ninja>"]
+license = "MPL-2.0"
+readme = "README.md"
+packages = [
+    { include = "live_questions" },
+]
+
+[tool.poetry.scripts]
+live-questions = 'live_questions.main:start'
+
+[tool.poetry.dependencies]
+click = "^8.1.7"
+flask = "^3.0.0"
+inquirer = "^3.2.1"
+jinja2 = "^3.1.3"
+ngrok = "^0.12.1"
+python = "^3.11"
+python-dotenv = "^1.0.0"
+pyyaml = "^6.0.1"
+qrcode = "^7.4.2"
+textual = "^0.47.1"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
